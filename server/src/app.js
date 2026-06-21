@@ -11,7 +11,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-app.get("/", (_, res) => res.send("Hello World!"));
+// app.get("/", (_, res) => res.send("Hello World!"));
 
 app.use("/api", routes);
 
